@@ -1,12 +1,17 @@
 require "../spec_helper"
-# TODO 3: require the config
+require "../../src/lib/config"
 
 describe Myapp::Config do
-  # TODO 3: initialize a config
+  config = Myapp::Config.new
 
   describe "#add_contact" do
     it "should work" do
-      # TODO 3: do the test!
+      config.contacts.size.should eq 0
+
+      contact = Myapp::Contact.new("Jane doe", "janedoe@example.com")
+      config.add_contact(contact)
+
+      config.contacts.size.should eq 1
     end
   end
 end

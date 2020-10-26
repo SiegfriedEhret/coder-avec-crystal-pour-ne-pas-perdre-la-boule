@@ -1,7 +1,9 @@
 require "file_utils"
 require "spec"
 
-# TODO 2: Create an environment variable MYAPP_PATH, use Random.new.hex(4)
-# TODO 2: mkdir the folder from MYAPP_PATH
+ENV["MYAPP_PATH"] = File.join(Dir.tempdir, "myapp-spec-#{Random.new.hex(4)}")
+FileUtils.mkdir_p(ENV["MYAPP_PATH"])
 
-# TODO 4: Cleanup after the suite !
+Spec.after_suite do
+  FileUtils.rm_rf ENV["MYAPP_PATH"]
+end
