@@ -1,4 +1,4 @@
-# TODO 3: require the dependency
+require "emoji"
 require "../structs/*"
 
 module Myapp
@@ -11,8 +11,7 @@ module Myapp
         if !name.nil? && !email.nil?
           add(name.split("=")[1], email.split("=")[1])
         else
-          # TODO 3: Use the dependency
-          puts "I need a name and an email!"
+          puts Emoji.emojize(":warning: I need a name and an email!")
         end
       end
 
