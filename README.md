@@ -2,7 +2,8 @@
 
 ## Objective
 
-Let's add a test!
+Let's add and use this dependency: https://github.com/veelenga/emoji.cr
+We want to make `src/commands/add.cr` nicer :smile:
 
 ## Progress
 

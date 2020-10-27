@@ -1,3 +1,4 @@
+# TODO 3: require the dependency
 require "../structs/*"
 
 module Myapp
@@ -10,6 +11,7 @@ module Myapp
         if !name.nil? && !email.nil?
           add(name.split("=")[1], email.split("=")[1])
         else
+          # TODO 3: Use the dependency
           puts "I need a name and an email!"
         end
       end
