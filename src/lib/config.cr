@@ -21,7 +21,9 @@ module Myapp
       save
     end
 
-    # TODO 2: Add a contacts method to get list contacts
+    def contacts
+      @list.contacts
+    end
 
     private def save
       File.open(@@config_path, "w") { |f| @list.to_yaml(f) }

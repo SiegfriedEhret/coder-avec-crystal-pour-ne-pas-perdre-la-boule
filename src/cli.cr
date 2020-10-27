@@ -12,7 +12,8 @@ module Myapp
         case command
         when "add"
           Commands::Add.new(config, args[1..-1])
-          # TODO 4: Add a when "show"
+        when "show"
+          Commands::Show.new(config, args[1..-1])
         when "version"
           Commands::Version.run
         else
