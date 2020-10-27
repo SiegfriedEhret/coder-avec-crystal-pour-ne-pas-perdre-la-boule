@@ -2,18 +2,13 @@
 
 ## Objective
 
-Add a `add` command to the app to add a contact and her/his email.
+Add a `show` command to show a contact.
 
 It should be called like this:
 
 ```shell
-myapp add name="Jane Doe" email="janedoe@example.com"
+myapp show jane
 ```
-
-Useful tips:
-
-- https://crystal-lang.org/api/0.35.1/Array.html
-- https://crystal-lang.org/api/0.35.1/YAML.html and https://crystal-lang.org/api/0.35.1/YAML/Serializable.html
 
 ## Progress
 
