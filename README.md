@@ -2,7 +2,9 @@
 
 ## Objective
 
-Make the program display "Hello, World!"
+Make the program display the version when calling `myapp version`, using [OptionParser](https://crystal-lang.org/api/0.35.1/OptionParser.html) with `unknown_args`.
+
+See [shards](https://github.com/crystal-lang/shards/blob/master/src/cli.cr) for an example.
 
 ## Progress
 
