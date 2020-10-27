@@ -2,13 +2,7 @@
 
 ## Objective
 
-Add a `show` command to show a contact.
-
-It should be called like this:
-
-```shell
-myapp show jane
-```
+Let's add a test!
 
 ## Progress
 

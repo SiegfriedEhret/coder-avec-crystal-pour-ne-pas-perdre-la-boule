@@ -3,6 +3,7 @@ require "../structs/list"
 
 module Myapp
   class Config
+    # TODO 1: Replace this to use the MYAPP_PATH environment variable, with a default value to the home folder
     @@config_path : Path = Path.home / "myapp.yaml"
     property list : List
 
