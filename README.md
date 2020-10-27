@@ -1,5 +1,9 @@
 # myapp
 
+## Objective
+
+Make the program display "Hello, World!"
+
 ## Progress
 
 1. hello world: [:question:](https://github.com/SiegfriedEhret/coder-avec-crystal-pour-ne-pas-perdre-la-boule/releases/tag/part-01-before), [:tada:](https://github.com/SiegfriedEhret/coder-avec-crystal-pour-ne-pas-perdre-la-boule/releases/tag/part-01-after)
