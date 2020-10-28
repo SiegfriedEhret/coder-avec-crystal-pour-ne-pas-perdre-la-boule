@@ -1,14 +1,17 @@
 require "option_parser"
 require "./commands/*"
+require "./lib/config"
 
 module Myapp
   def self.run
     OptionParser.parse do |parser|
       parser.unknown_args do |args, options|
         command = args[0]
+        config = Config.new
 
         case command
-        # TODO 5: Add a when "add"
+        when "add"
+          Commands::Add.new(config, args[1..-1])
         when "version"
           Commands::Version.run
         else

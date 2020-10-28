@@ -1,10 +1,13 @@
 require "yaml"
+require "./contact"
 
 module Myapp
   struct List
     include YAML::Serializable
-    # TODO 2: Add a `contacts` property
+    property contacts : Array(Contact)
 
-    # TODO 2: Add a constructor to initialize `contacts`
+    def initialize
+      @contacts = Array(Contact).new
+    end
   end
 end

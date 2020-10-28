@@ -1,3 +1,12 @@
+require "yaml"
+
 module Myapp
-  # TODO 1: Create a struct "Contact" which is serializable to yaml
+  struct Contact
+    include YAML::Serializable
+    property name : String
+    property email : String
+
+    def initialize(@name : String, @email : String)
+    end
+  end
 end
