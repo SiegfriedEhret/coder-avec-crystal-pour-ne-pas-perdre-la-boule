@@ -8,6 +8,7 @@ module Myapp
         command = args[0]
 
         case command
+        # TODO 5: Add a when "add"
         when "version"
           Commands::Version.run
         else

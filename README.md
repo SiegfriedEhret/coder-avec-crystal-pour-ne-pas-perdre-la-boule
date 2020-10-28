@@ -2,9 +2,18 @@
 
 ## Objective
 
-Make the program display the version when calling `myapp version`, using [OptionParser](https://crystal-lang.org/api/0.35.1/OptionParser.html) with `unknown_args`.
+Add a `add` command to the app to add a contact and her/his email.
 
-See [shards](https://github.com/crystal-lang/shards/blob/master/src/cli.cr) for an example.
+It should be called like this:
+
+```shell
+myapp add name="Jane Doe" email="janedoe@example.com"
+```
+
+Useful tips:
+
+- https://crystal-lang.org/api/0.35.1/Array.html
+- https://crystal-lang.org/api/0.35.1/YAML.html and https://crystal-lang.org/api/0.35.1/YAML/Serializable.html
 
 ## Progress
 
