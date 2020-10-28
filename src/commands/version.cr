@@ -1,3 +1,11 @@
 module Myapp
-  # TODO 1: Create a module Commands with a class Version
+  module Commands
+    class Version
+      def self.run
+        puts "myapp v#{VERSION}"
+
+        exit
+      end
+    end
+  end
 end
